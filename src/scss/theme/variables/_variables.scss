@@ -1,0 +1,733 @@
+@import './inlineSvgBackgrounds';
+// --- START BASE COLORS ---
+$sky-blue: #439fff !default;
+$sky-blue-light: #86c0ff !default;
+$sky-blue-dark: #2b78cc !default;
+
+$fuschia-pink: #ff4671 !default;
+$fuschia-pink-light: #ff6a8d !default;
+$fuschia-pink-dark: #e73961 !default;
+
+$white: #ffffff !default;
+$black: #222417 !default;
+
+$neutral-100: #f5f5f7 !default;
+$neutral-200: #ececec !default;
+$neutral-300: #e4e4e4 !default;
+$neutral-400: #c2c2c2 !default;
+$neutral-500: #919191 !default;
+$neutral-600: #616161 !default;
+
+$info: #2b70e5 !default;
+$error: #cd2b26 !default;
+$warning: #dd6829 !default;
+$success: #28a42f !default;
+
+$primary: $sky-blue !default;
+$primary-light: $sky-blue-light !default;
+$primary-dark: $sky-blue-dark !default;
+
+$secondary: $fuschia-pink !default;
+$secondary-light: $fuschia-pink-light !default;
+$secondary-dark: $fuschia-pink-dark !default;
+
+$new-colorl-list: (
+    primary: $primary,
+    primary-light: $primary-light,
+    primary-dark: $primary-dark,
+    secondary: $secondary,
+    secondary-light: $secondary-light,
+    secondary-dark: $secondary-dark,
+    neutral-100: $neutral-100,
+    neutral-200: $neutral-200,
+    neutral-300: $neutral-300,
+    neutral-400: $neutral-400,
+    neutral-500: $neutral-500,
+    neutral-600: $neutral-600,
+    info: $info,
+    error: $error,
+    warning: $warning,
+    success: $success,
+);
+
+// --- END BASE COLORS ---
+
+// --- START SPACING ---
+$spacer: 8px !default;
+$spacers: (
+    0: 0,
+    1: $spacer * 0.5,
+    2: $spacer,
+    3: $spacer * 2,
+    4: $spacer * 3,
+    5: $spacer * 4,
+    6: $spacer * 6,
+    7: $spacer * 8,
+    8: $spacer * 12,
+    9: $spacer * 16,
+) !default;
+// --- END SPACING ---
+
+// START BREAKPOINTS, GRID AND CONTAINERS MAX WIDTHS
+$grid-breakpoints: (
+    xs: 0,
+    sm: 375px,
+    md: 768px,
+    lg: 1024px,
+    xl: 1232px,
+    xxl: 1376px,
+) !default;
+
+$container-max-widths: (
+    sm: 339px,
+    md: 736px,
+    lg: 992px,
+    xl: 1200px,
+    xxl: 1344px,
+) !default;
+
+$include-column-box-sizing: true !default;
+$grid-columns: 12 !default;
+$grid-gutter-width: 1.5rem !default;
+// END BREAKPOINTS, GRID AND CONTAINERS MAX WIDTHS
+
+// --- START TYPOGRAPHY ---
+$primary-font-family: 'DM Sans', sans-serif !default;
+$header-font-family: $primary-font-family !default;
+
+$h1-fonts: (
+    sm: (
+        font-size: 36px,
+        line-height: 42px,
+        letter-spacing: -0.01em,
+    ),
+    md: (
+        font-size: 36px,
+        line-height: 42px,
+        letter-spacing: -0.01em,
+    ),
+    lg: (
+        font-size: 42px,
+        line-height: 48px,
+        letter-spacing: -0.01em,
+    ),
+    xl: (
+        font-size: 56px,
+        line-height: 64px,
+        letter-spacing: -0.02em,
+    ),
+    xxl: (
+        font-size: 56px,
+        line-height: 64px,
+        letter-spacing: -0.02em,
+    ),
+) !default;
+
+$h2-fonts: (
+    sm: (
+        font-size: 32px,
+        line-height: 40px,
+        letter-spacing: -0.01em,
+    ),
+    md: (
+        font-size: 32px,
+        line-height: 40px,
+        letter-spacing: -0.01em,
+    ),
+    lg: (
+        font-size: 36px,
+        line-height: 42px,
+        letter-spacing: -0.01em,
+    ),
+    xl: (
+        font-size: 42px,
+        line-height: 48px,
+        letter-spacing: -0.01em,
+    ),
+    xxl: (
+        font-size: 48px,
+        line-height: 56px,
+        letter-spacing: -0.02em,
+    ),
+) !default;
+
+$h3-fonts: (
+    sm: (
+        font-size: 28px,
+        line-height: 38px,
+        letter-spacing: -0.01em,
+    ),
+    md: (
+        font-size: 28px,
+        line-height: 38px,
+        letter-spacing: -0.02em,
+    ),
+    lg: (
+        font-size: 32px,
+        line-height: 40px,
+        letter-spacing: -0.01em,
+    ),
+    xl: (
+        font-size: 36px,
+        line-height: 42px,
+        letter-spacing: -0.01em,
+    ),
+    xxl: (
+        font-size: 42px,
+        line-height: 48px,
+        letter-spacing: -0.01em,
+    ),
+) !default;
+
+$h4-fonts: (
+    sm: (
+        font-size: 24px,
+        line-height: 32px,
+        letter-spacing: -0.01em,
+    ),
+    md: (
+        font-size: 24px,
+        line-height: 32px,
+        letter-spacing: -0.01em,
+    ),
+    lg: (
+        font-size: 32px,
+        line-height: 40px,
+        letter-spacing: -0.01em,
+    ),
+    xl: (
+        font-size: 32px,
+        line-height: 40px,
+        letter-spacing: -0.01em,
+    ),
+    xxl: (
+        font-size: 36px,
+        line-height: 42px,
+        letter-spacing: -0.01em,
+    ),
+) !default;
+
+$h5-fonts: (
+    sm: (
+        font-size: 20px,
+        line-height: 26px,
+        letter-spacing: -0.01em,
+    ),
+    md: (
+        font-size: 20px,
+        line-height: 26px,
+        letter-spacing: -0.01em,
+    ),
+    lg: (
+        font-size: 24px,
+        line-height: 32px,
+        letter-spacing: -0.01em,
+    ),
+    xl: (
+        font-size: 28px,
+        line-height: 38px,
+        letter-spacing: -0.015em,
+    ),
+    xxl: (
+        font-size: 32px,
+        line-height: 48px,
+        letter-spacing: -0.01em,
+    ),
+) !default;
+
+$h6-fonts: (
+    sm: (
+        font-size: 18px,
+        line-height: 24px,
+        letter-spacing: -0.01em,
+    ),
+    md: (
+        font-size: 18px,
+        line-height: 24px,
+        letter-spacing: -0.01em,
+    ),
+    lg: (
+        font-size: 18px,
+        line-height: 24px,
+        letter-spacing: -0.01em,
+    ),
+    xl: (
+        font-size: 20px,
+        line-height: 26px,
+        letter-spacing: -0.01em,
+    ),
+    xxl: (
+        font-size: 24px,
+        line-height: 32px,
+        letter-spacing: -0.01em,
+    ),
+) !default;
+
+$body-fonts: (
+    sm: (
+        font-size: 16px,
+        line-height: 24px,
+        letter-spacing: -0.01em,
+    ),
+    md: (
+        font-size: 16px,
+        line-height: 24px,
+        letter-spacing: -0.01em,
+    ),
+    lg: (
+        font-size: 16px,
+        line-height: 24px,
+        letter-spacing: -0.01em,
+    ),
+    xl: (
+        font-size: 16px,
+        line-height: 24px,
+        letter-spacing: -0.01em,
+    ),
+    xxl: (
+        font-size: 18px,
+        line-height: 24px,
+        letter-spacing: -0.01em,
+    ),
+) !default;
+
+$body-small-fonts: (
+    sm: (
+        font-size: 14px,
+        line-height: 22px,
+        letter-spacing: -0.01em,
+    ),
+    md: (
+        font-size: 14px,
+        line-height: 22px,
+        letter-spacing: -0.01em,
+    ),
+    lg: (
+        font-size: 14px,
+        line-height: 22px,
+        letter-spacing: -0.01em,
+    ),
+    xl: (
+        font-size: 14px,
+        line-height: 22px,
+        letter-spacing: -0.01em,
+    ),
+    xxl: (
+        font-size: 16px,
+        line-height: 24px,
+        letter-spacing: -0.01em,
+    ),
+) !default;
+
+$button-fonts: (
+    sm: (
+        font-size: 16px,
+        line-height: 24px,
+        letter-spacing: -0.01em,
+    ),
+    md: (
+        font-size: 16px,
+        line-height: 24px,
+        letter-spacing: -0.01em,
+    ),
+    lg: (
+        font-size: 16px,
+        line-height: 24px,
+        letter-spacing: -0.01em,
+    ),
+    xl: (
+        font-size: 16px,
+        line-height: 24px,
+        letter-spacing: -0.01em,
+    ),
+    xxl: (
+        font-size: 18px,
+        line-height: 24px,
+        letter-spacing: -0.01em,
+    ),
+) !default;
+
+$eyebrow-fonts: (
+    sm: (
+        font-size: 18px,
+        line-height: 24px,
+        letter-spacing: -0.01em,
+    ),
+    md: (
+        font-size: 18px,
+        line-height: 24px,
+        letter-spacing: -0.01em,
+    ),
+    lg: (
+        font-size: 18px,
+        line-height: 24px,
+        letter-spacing: -0.01em,
+    ),
+    xl: (
+        font-size: 20px,
+        line-height: 32px,
+        letter-spacing: -0.01em,
+    ),
+    xxl: (
+        font-size: 24px,
+        line-height: 32px,
+        letter-spacing: -0.01em,
+    ),
+) !default;
+
+$stats-fonts: (
+    sm: (
+        font-size: 64px,
+        line-height: 64px,
+        letter-spacing: -0.01em,
+    ),
+    md: (
+        font-size: 72px,
+        line-height: 72px,
+        letter-spacing: -0.01em,
+    ),
+    lg: (
+        font-size: 80px,
+        line-height: 80px,
+        letter-spacing: -0.01em,
+    ),
+    xl: (
+        font-size: 96px,
+        line-height: 96px,
+        letter-spacing: -0.01em,
+    ),
+    xxl: (
+        font-size: 104px,
+        line-height: 104px,
+        letter-spacing: -0.01em,
+    ),
+) !default;
+
+$header-fonts: (
+    h1: $h1-fonts,
+    h2: $h2-fonts,
+    h3: $h3-fonts,
+    h4: $h4-fonts,
+    h5: $h5-fonts,
+    h6: $h6-fonts,
+);
+
+$regular-fonts: (
+    body: $body-fonts,
+    body-small: $body-small-fonts,
+    button: $button-fonts,
+    eyebrow: $eyebrow-fonts,
+    stats: $stats-fonts,
+);
+
+$font-controllers: (
+    md: true,
+    lg: true,
+    xl: true,
+    xxl: true,
+) !default;
+
+// --- END TYPOGRAPHY ---
+
+// --- START BORDERS ---
+$border-width: 1px !default;
+$border-widths: (
+    1: 1px,
+    2: 2px,
+    3: 3px,
+    4: 4px,
+    5: 5px,
+) !default;
+
+$border-style: solid !default;
+$border-color: $neutral-300 !default;
+$base-border: $border-width $border-style $border-color !default;
+$base-outline: map-get($border-widths, 2) dashed $black;
+$base-outline-offset: 2px;
+$inverted-outline: map-get($border-widths, 2) dashed $white;
+// --- END BORDERS ---
+
+// --- START TRANSITION ---
+$transition-base: all 0.2s ease-in-out !default;
+$transition-fade: opacity 0.2s linear !default;
+$transition-collapse: height 0.4s ease !default;
+$transition-collapse-width: width 0.4s ease !default;
+// --- END TRANSITION ---
+
+// --- START CONTROL BUTTON ---
+$control-border-radius: 50% !default;
+
+$control-sizes: (
+    xxl: 80px,
+    xl: 56px,
+    lg: 48px,
+    md: 40px,
+    sm: 32px,
+) !default;
+
+$control-breakpoints-scaling: (
+    xl: 0.7,
+    lg: 0.6,
+    md: 0.5,
+    sm: 0.4,
+) !default;
+
+// default
+$control-button-color: $primary !default;
+$control-button-bg: transparent !default;
+$control-border: $border-width $border-style $primary !default;
+//hover
+$control-button-hover-color: $primary !default;
+$control-button-hover-bg: $neutral-200 !default;
+$control-border-hover: $border-width $border-style $primary !default;
+//active
+$control-button-active-color: $neutral-200 !default;
+$control-button-active-bg: $primary !default;
+$control-border-active: $border-width $border-style $neutral-200 !default;
+//disabled
+$control-button-disabled-color: $white !default;
+$control-button-disabled-bg: $neutral-400 !default;
+$control-border-disabled: $border-width $border-style $neutral-400 !default;
+// --- END CONTROL BUTTON ---
+
+// --- START CHIP ---
+$chip-padding: map-get($spacers, 1) map-get($spacers, 3);
+// default
+$chip-color: $black !default;
+$chip-color-inverted: $neutral-100;
+$chip-bg: transparent !default;
+$chip-bg-inverted: transparent !default;
+$chip-border: $border-width $border-style $primary !default;
+$chip-border-inverted: $border-width $border-style $neutral-100 !default;
+// hover
+$chip-hover-color: $black !default;
+$chip-hover-color-inverted: $white !default;
+$chip-hover-bg: $primary-light !default;
+$chip-hover-bg-inverted: $neutral-400 !default;
+$chip-border-hover: $border-width $border-style $primary !default;
+$chip-border-hover-inverted: $border-width $border-style $neutral-100 !default;
+// active
+$chip-active-color: $white !default;
+$chip-active-color-inverted: $white !default;
+$chip-active-bg: $primary-dark !default;
+$chip-active-bg-inverted: $primary !default;
+$chip-border-active: $border-width $border-style $primary-dark !default;
+$chip-border-active-inverted: $border-width $border-style $primary !default;
+// disabled
+$chip-disabled-color: $neutral-300 !default;
+$chip-disabled-color-inverted: $white !default;
+$chip-disabled-bg: $neutral-100 !default;
+$chip-disabled-bg-inverted: $neutral-400 !default;
+$chip-border-disabled: $border-width $border-style $neutral-100 !default;
+$chip-border-disabled-inverted: $border-width $border-style $neutral-400 !default;
+// --- END CHIP ---
+
+// --- START TAB ---
+$tab-media-size: 40px !default;
+$tab-padding: map-get($spacers, 4) !default;
+$tab-padding-vertical: map-get($spacers, 4) 0 !default;
+$tab-border: map-get($border-widths, 2) $border-style $neutral-400 !default;
+$tab-border-inverted: map-get($border-widths, 2) $border-style $neutral-400 !default;
+$tab-border-active: map-get($border-widths, $key: 2) $border-style $primary !default;
+$tab-border-active-inverted: map-get($border-widths, $key: 4) $border-style
+    $primary !default;
+$tab-border-selected: map-get($border-widths, $key: 2) $border-style $primary !default;
+$tab-border-selected-inverted: map-get($border-widths, $key: 4) $border-style
+    $primary !default;
+$tab-border-vertical: $border-width $border-style $black !default;
+$tab-border-vertical-inverted: $border-width $border-style $white !default;
+// default
+$tab-color: $black !default;
+$tab-color-inverted: $white !default;
+$tab-bg: transparent !default;
+$tab-bg-inverted: transparent !default;
+// hover
+$tab-color-hover: $black !default;
+$tab-color-hover-inverted: $white !default;
+$tab-bg-hover: $neutral-100 !default;
+$tab-bg-hover-inverted: $neutral-600 !default;
+// active
+$tab-color-active: $black !default;
+$tab-color-active-inverted: $white !default;
+$tab-bg-active: $neutral-200 !default;
+$tab-bg-active-inverted: $neutral-600 !default;
+// selected
+$tab-color-selected: $black !default;
+$tab-color-selected-inverted: $white !default;
+$tab-bg-selected: transparent !default;
+$tab-bg-selected-inverted: transparent !default;
+
+// vertical
+$tab-vertical-bg: transparent !default;
+// --- END TAB ---
+
+// --- START ACCORDION
+$accordion-border: $border-width $border-style $neutral-300;
+// default
+$accordion-color: $black;
+$accordion-color-inverted: $white;
+// hover
+$accordion-color-hover: $primary;
+$accordion-color-hover-inverted: $primary;
+// --- END ACCORDION ---
+
+// --- START PAGINATION ---
+$pagination-size-normal: 24px;
+$pagination-size-large: 32px;
+$pagination-size-small: 18px;
+$pagination-icon-size: 16px;
+$pagination-icon-size-large: 24px;
+$pagination-br: 4px;
+
+// default
+$pagination-color: $primary;
+$pagination-border: $border-width $border-style $primary;
+
+// hover
+$pagination-color-hover: $primary-light;
+
+// active
+$pagination-color-active: $primary-dark;
+
+// disabled
+$pagination-color-disabled: $neutral-400;
+$pagination-border-disabled: $border-width $border-style $neutral-400;
+
+// --- END PAGINATION ---
+
+// --- START CHECKBOXES ---
+$checkbox-br: 6px;
+$checkbox-label-spacing: 20px;
+$checkbox-size: 24px;
+$checkbox-line-height: 26px;
+// default
+$checkbox-border: $border-width $border-style $neutral-500;
+$checkbox-bg: $white;
+// hover
+$checkbox-border-hover: $border-width $border-style $primary-light;
+$checkbox-bg-hover: $neutral-100;
+// active
+$checkbox-border-active: $border-width $border-style $primary-dark;
+$checkbox-bg-active: $neutral-100;
+// checked
+$checkbox-border-checked: $border-width $border-style $primary;
+$checkbox-bg-checked: $neutral-100;
+// disabled
+$checkbox-border-disabled: $border-width $border-style $neutral-400;
+$checkbox-bg-disabled: $neutral-200;
+
+// START INPUT COLORS
+$input-field-text-color: $black;
+$input-field-border: 1px solid $neutral-500;
+$input-field-radius: 4px;
+$input-field-border-hover: 1px solid $black;
+$input-field-border-disabled: 1px solid $neutral-500;
+$input-field-border-error: 1px solid $error;
+$input-field-placeholder-color: $neutral-500;
+$input-field-placeholder-focus: transparent;
+$input-field-bg-color: transparent;
+$input-field-bg-color-inverted: $white;
+$input-field-placeholder-color-inverted: $white;
+$input-field-text-color-inverted: $white;
+
+// input font-size, margin and padding
+$input-placeholder-font-size: 18px;
+$input-field-padding: 12px 20px;
+$input-field-margin-top: 24px;
+
+// disabled state
+$input-placeholder-color-disabled: $neutral-200;
+$input-placeholder-color-disabled-inverted: $neutral-200;
+$input-field-bg-disabled: $neutral-400;
+$input-field-bg-disabled-inverted: $neutral-400;
+// error message
+$input-error-message-color: $error;
+$input-error-message-font-size: 16px;
+$input-error-message-padding: 20px;
+$input-error-message-margin-top: 8px;
+
+// helper message
+$input-helper-message-color: $neutral-500;
+$input-helper-message-font-size: 16px;
+$input-helper-message-padding: 20px;
+$input-helper-message-margin-top: 8px;
+
+// input search with icon
+$input-icon-color: $neutral-500;
+$input-icon-color-active: $black;
+$search-wrapper-padding: 6px 20px;
+$input-search-field-padding: 7px 0;
+$input-field-padding-with-icon: 12px 10px 12px 20px;
+// INPUT END HERE
+
+// CARDS VARIABLES START HERE
+$cards-horizontal-ml: map-get($spacers, 3) !default;
+// CARDS VARIABLES END HERE
+
+// BUTTON START
+$button-default-border: $border-width $border-style $sky-blue;
+$button-primary-bg-color: $sky-blue !default;
+$button-primary-color: $white !default;
+$button-secondary-bg-color: transparent !default;
+$button-secondary-color: $sky-blue !default;
+$button-ghost-border-color: $border-width $border-style transparent;
+$button-ghost-bg-color: transparent !default;
+$button-ghost-color: $sky-blue !default;
+$button-ghost-border-color: $border-width $border-style transparent;
+$button-secondary-border: $border-width $border-style $sky-blue !default;
+$button-secondary-border-inverted: $border-width $border-style $neutral-100 !default;
+
+// hover & focus
+$button-primary-bg-hover: $sky-blue-light !default;
+$button-primary-color-hover: $white !default;
+$button-secondary-bg-hover: $neutral-100 !default;
+$button-secondary-color-hover: $sky-blue !default;
+$button-ghost-bg-hover: $white !default;
+$button-ghost-color-hover: $sky-blue-light !default;
+$button-secondary-border: $border-width $border-style $sky-blue !default;
+$button-secondary-border-inverted: $border-width $border-style $neutral-400 !default;
+// pressed
+$button-primary-bg-presseed: $sky-blue-dark !default;
+$button-primary-color-presseed: $white !default;
+$button-secondary-bg-presseed: $sky-blue-light !default;
+$button-secondary-color-presseed: $white !default;
+$button-ghost-bg-presseed: $white !default;
+$button-ghost-color-presseed: $sky-blue-dark !default;
+$button-secondary-border: $border-width $border-style $sky-blue !default;
+$button-secondary-border-inverted: $border-width $border-style $sky-blue-dark !default;
+
+// disabled
+$button-primary-bg-disabled: $neutral-400 !default;
+$button-primary-border-disabled: $neutral-400 !default;
+$button-primary-color-disabled: $white !default;
+$button-secondary-bg-disabled: transparent !default;
+$button-secondary-border-disabled: $neutral-400 !default;
+$button-secondary-color-disabled: $neutral-400 !default;
+$button-ghost-bg-disabled: transparent !default;
+$button-ghost-color-disabled: $neutral-400 !default;
+
+// padding, margins, border-radius, font-styles
+$button-default-padding: 12px 24px !default;
+$button-mobile-padding: 14px 18px !default;
+$button-border-radius: 6px !default;
+$button-font-weight: 700 !default;
+$button-font-size-large: 18px !default;
+$button-font-default: 16px !default;
+$buttons-mt: map-get($spacers, 3);
+$buttons-mb: map-get($spacers, 3);
+
+// group buttons styles
+$group-buttons-mt: map-get($spacers, 3);
+$group-buttons-mb: map-get($spacers, 3);
+$group-buttons-space-between: map-get($spacers, 3);
+
+// buttons with icons margin
+$button-icon-gap: 10px;
+// BUTTON STYLES END HERE
+
+// FORM STYLES START HERE
+$form-wrapper-padding-desktop: 48px 48px;
+$form-wrapper-padding-mobile: 32px 25px;
+$form-wrapper-bg-color: $neutral-100;
+$form-wrapper-margin-top: 32px;
+// FORM STYLES END HERE

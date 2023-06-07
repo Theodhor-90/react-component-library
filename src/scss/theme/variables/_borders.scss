@@ -1,0 +1,17 @@
+$border-width: 1px !default;
+$border-widths: (
+    1: 1px,
+    2: 2px,
+    3: 3px,
+    4: 4px,
+    5: 5px,
+) !default;
+
+$border-style: solid !default;
+$border-color: $neutral-300 !default;
+$base-border: $border-width $border-style $border-color !default;
+$base-outline: map-get($border-widths, 2) dashed $black;
+$base-outline-offset: 2px;
+$inverted-outline: map-get($border-widths, 2) dashed $white;
+$default-outline: 1px dashed $black !default;
+$default-outline-offset: 2px;

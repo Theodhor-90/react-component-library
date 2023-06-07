@@ -1,0 +1,189 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $primary-font-family;
+    font-feature-settings: 'ss04' on, 'ss03' on;
+}
+
+.container {
+    &.inverted {
+        color: $white;
+        background-color: $black;
+    }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $header-font-family;
+    margin-top: map-get($spacers, 2);
+    margin-bottom: map-get($spacers, 2);
+}
+
+.fw-bold {
+    font-weight: bold;
+}
+
+.fw-normal {
+    font-weight: normal;
+}
+
+.fs-italic {
+    font-style: italic;
+}
+
+button {
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    text-align: start;
+    color: inherit;
+    font-family: $primary-font-family;
+}
+// BLACK AND WHITE COLORS
+.bg-white {
+    background-color: $white;
+}
+.c-white {
+    color: $white;
+}
+.bg-black {
+    background-color: $black;
+}
+.c-black {
+    color: $black;
+}
+
+// BOX SHADOWS
+.shadow-default {
+    box-shadow: 0px 4px 8px rgba(79, 94, 113, 0.1),
+        0px 2px 4px rgba(79, 94, 113, 0.11), 0px 0px 2px rgba(79, 94, 113, 0.12);
+}
+.shadow-hover {
+    box-shadow: 0px 32px 64px rgba(79, 94, 113, 0.07),
+        0px 16px 32px rgba(79, 94, 113, 0.08),
+        0px 8px 16px rgba(79, 94, 113, 0.09), 0px 4px 8px rgba(79, 94, 113, 0.1),
+        0px 2px 4px rgba(79, 94, 113, 0.11), 0px 0px 2px rgba(79, 94, 113, 0.12);
+}
+.shadow-pressed {
+    box-shadow: 0px 16px 32px rgba(79, 94, 113, 0.09),
+        0px 4px 8px rgba(79, 94, 113, 0.1), 0px 2px 4px rgba(79, 94, 113, 0.11),
+        0px 0px 2px rgba(79, 94, 113, 0.12);
+}
+
+// CARDS VARIABLES ASPECT RATIO
+.ar-1-1 {
+    aspect-ratio: 1 / 1;
+}
+.ar-3-2 {
+    aspect-ratio: 3 / 2;
+}
+.ar-4-3 {
+    aspect-ratio: 4 / 3;
+}
+.ar-16-9 {
+    aspect-ratio: 16 / 9;
+}
+
+// GENERATE COLOR CLASSES
+@each $name, $color in $color-list {
+    .bg-#{$name} {
+        background-color: $color;
+    }
+    .c-#{$name} {
+        color: $color;
+    }
+}
+
+// GENERATE HEADERS PROPERTIES AND HEADER CLASSES
+@each $header, $header-values in $header-fonts {
+    #{$header},
+    .#{$header} {
+        @each $breakpoint-name, $breakpoint-properties in $header-values {
+            @if $breakpoint-name == sm {
+                @each $property, $value in $breakpoint-properties {
+                    #{$property}: $value;
+                }
+            } @else {
+                @if map-get($font-controllers, $breakpoint-name) {
+                    @include media-breakpoint-up($breakpoint-name) {
+                        @each $property, $value in $breakpoint-properties {
+                            #{$property}: $value;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// GLOBAL OUTLINE
+@mixin global-outline {
+    &:focus {
+        outline: $base-outline;
+        outline-offset: $base-outline-offset;
+    }
+    &.inverted {
+        &:focus {
+            outline: $inverted-outline;
+        }
+    }
+}
+
+// GENERATE OTHER TYPOGRAPHY CLASSES
+@each $font-group, $font-group-values in $regular-fonts {
+    .fs-#{$font-group} {
+        @each $breakpoint-name, $breakpoint-properties in $font-group-values {
+            @if $breakpoint-name == sm {
+                @each $property, $value in $breakpoint-properties {
+                    #{$property}: $value;
+                }
+            } @else {
+                @if map-get($font-controllers, $breakpoint-name) {
+                    @include media-breakpoint-up($breakpoint-name) {
+                        @each $property, $value in $breakpoint-properties {
+                            #{$property}: $value;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// GENERATE ICONS CLASSES
+@each $icon-name, $icon-size in $icons-sizes {
+    .icon-container-#{$icon-name} {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: $icon-size;
+        height: $icon-size;
+        & svg {
+            width: $icon-size;
+            height: $icon-size;
+            fill: none;
+            stroke: currentColor;
+        }
+        &.inverted {
+            svg {
+                stroke: $white;
+            }
+        }
+        &.social {
+            svg {
+                stroke: none;
+            }
+            &.inverted {
+                svg {
+                    color: $white;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,19 @@
+.icon-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    @each $key, $size in $icons-sizes {
+        &.#{$key} {
+            width: $size;
+            height: $size;
+        }
+    }
+}
+
+.button {
+    & .icon-container {
+        margin-left: $button-icon-gap;
+    }
+}

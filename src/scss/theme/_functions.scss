@@ -1,0 +1,7 @@
+@function get-color($group, $weight) {
+    @return map-get(map-get($colors-list, $group), $weight);
+}
+
+@function get-spacer($size) {
+    @return map-get($spacers, $size);
+}

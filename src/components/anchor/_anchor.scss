@@ -1,0 +1,29 @@
+.link {
+    color: $anchor-text-color;
+    display: inline-flex !important;
+    align-items: center;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    font-weight: $anchor-text-font-weight;
+    &--icon {
+        margin-left: $anchor-icon-ml;
+    }
+    &:hover {
+        color: $anchor-text-color-hover;
+        border-bottom: 1px solid $anchor-text-color-hover;
+    }
+    &:focus {
+        color: $anchor-text-color-pressed;
+        @include global-outline($base-outline, $base-outline-offset);
+        border-bottom: 1px solid $anchor-text-color-pressed;
+    }
+    &:active {
+        color: $anchor-text-color-pressed;
+        border-bottom: 1px solid $anchor-text-color-pressed;
+        @include global-outline($base-outline, $base-outline-offset);
+    }
+    &.disabled {
+        pointer-events: none;
+        color: $anchor-text-color-disabled;
+    }
+}

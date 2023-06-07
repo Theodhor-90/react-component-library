@@ -1,0 +1,10 @@
+// declaring css variables that can be referred to from js
+// if changing any of the variables in _grid.scss, the root css variables will automatically update
+
+:root {
+    --sm: #{map-get($map: $grid-breakpoints, $key: sm)};
+    --md: #{map-get($map: $grid-breakpoints, $key: md)};
+    --lg: #{map-get($map: $grid-breakpoints, $key: lg)};
+    --xl: #{map-get($map: $grid-breakpoints, $key: xl)};
+    --xxl: #{map-get($map: $grid-breakpoints, $key: xxl)};
+}

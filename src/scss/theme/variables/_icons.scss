@@ -1,0 +1,17 @@
+$icons-sizes: (
+    xs: 8px,
+    sm: 16px,
+    md: 24px,
+    lg: 32px,
+    xl: 40px,
+    xxl: 64px,
+);
+
+$checkbox-checked: "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' height='18' width='18' viewBox='0 0  18 18'><path d='M20 6L9 17L4 12' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round' stroke='rgb(8, 48, 125)' fill='none'/></svg>" !default;
+$checkbox-checked-disabled: "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' height='18' width='18' viewBox='0 0  18 18'><path d='M20 6L9 17L4 12' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round' stroke='rgb(194, 194, 194)' fill='none'/></svg>" !default;
+
+$checkbox-indeterminate: "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' height='18' width='18' viewBox='0 0  18 18'><path d='M4.09961 9.00195H13.8996' stroke='rgb(8, 48, 125)' stroke-width='2' stroke-linecap='round' fill='none' stroke-linejoin='round'/></svg>" !default;
+$checkbox-indeterminate-disabled: "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' height='18' width='18' viewBox='0 0  18 18'><path d='M4.09961 9.00195H13.8996' stroke='rgb(194, 194, 194)' stroke-width='2' stroke-linecap='round' fill='none' stroke-linejoin='round'/></svg>" !default;
+
+$radio-checked: "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' height='10' width='10' viewBox='0 0  10 10'><circle cx='4.99922' cy='4.99922' r='4.8' fill='rgb(8, 48, 125)' stroke='none'/></svg>" !default;
+$radio-checked-disabled: "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' height='10' width='10' viewBox='0 0  10 10'><circle cx='4.99922' cy='4.99922' r='4.8' fill='rgb(194, 194, 194)' stroke='none'/></svg>" !default;

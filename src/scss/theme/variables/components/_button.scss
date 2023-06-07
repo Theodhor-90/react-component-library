@@ -1,0 +1,58 @@
+$button-default-border: $border-width $border-style $sky-blue;
+$button-primary-bg-color: $sky-blue !default;
+$button-primary-color: $white !default;
+$button-secondary-bg-color: transparent !default;
+$button-secondary-color: $sky-blue !default;
+$button-ghost-border-color: $border-width $border-style transparent;
+$button-ghost-bg-color: transparent !default;
+$button-ghost-color: $sky-blue !default;
+$button-ghost-border-color: $border-width $border-style transparent;
+$button-secondary-border: $border-width $border-style $sky-blue !default;
+$button-secondary-border-inverted: $border-width $border-style $neutral-100 !default;
+
+// hover & focus
+$button-primary-bg-hover: $sky-blue-light !default;
+$button-primary-color-hover: $white !default;
+$button-secondary-bg-hover: $neutral-100 !default;
+$button-secondary-color-hover: $sky-blue !default;
+$button-ghost-bg-hover: $white !default;
+$button-ghost-color-hover: $sky-blue-light !default;
+$button-secondary-border: $border-width $border-style $sky-blue !default;
+$button-secondary-border-inverted: $border-width $border-style $neutral-400 !default;
+// pressed
+$button-primary-bg-presseed: $sky-blue-dark !default;
+$button-primary-color-presseed: $white !default;
+$button-secondary-bg-presseed: $sky-blue-light !default;
+$button-secondary-color-presseed: $white !default;
+$button-ghost-bg-presseed: $white !default;
+$button-ghost-color-presseed: $sky-blue-dark !default;
+$button-secondary-border: $border-width $border-style $sky-blue !default;
+$button-secondary-border-inverted: $border-width $border-style $sky-blue-dark !default;
+
+// disabled
+$button-primary-bg-disabled: $neutral-400 !default;
+$button-primary-border-disabled: $neutral-400 !default;
+$button-primary-color-disabled: $white !default;
+$button-secondary-bg-disabled: transparent !default;
+$button-secondary-border-disabled: $neutral-400 !default;
+$button-secondary-color-disabled: $neutral-400 !default;
+$button-ghost-bg-disabled: transparent !default;
+$button-ghost-color-disabled: $neutral-400 !default;
+
+// padding, margins, border-radius, font-styles
+$button-default-padding: 12px 24px !default;
+$button-mobile-padding: 14px 18px !default;
+$button-border-radius: 6px !default;
+$button-font-weight: 700 !default;
+$button-font-size-large: 18px !default;
+$button-font-default: 16px !default;
+$buttons-mt: map-get($spacers, 3);
+$buttons-mb: map-get($spacers, 3);
+
+// group buttons styles
+$group-buttons-mt: map-get($spacers, 3);
+$group-buttons-mb: map-get($spacers, 3);
+$group-buttons-space-between: map-get($spacers, 4);
+
+// buttons with icons margin
+$button-icon-gap: 10px;

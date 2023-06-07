@@ -1,0 +1,49 @@
+$sky-blue: #08307d !default;
+$sky-blue-light: #21458a !default;
+$sky-blue-dark: #072b71 !default;
+
+$fuschia-pink: #ff4671 !default;
+$fuschia-pink-light: #ff6a8d !default;
+$fuschia-pink-dark: #e73961 !default;
+
+$white: #ffffff !default;
+$black: #222417 !default;
+
+$neutral-100: #f5f5f7 !default;
+$neutral-200: #ececec !default;
+$neutral-300: #e4e4e4 !default;
+$neutral-400: #c2c2c2 !default;
+$neutral-500: #919191 !default;
+$neutral-600: #616161 !default;
+
+$info: #2b70e5 !default;
+$error: #cd2b26 !default;
+$warning: #dd6829 !default;
+$success: #28a42f !default;
+
+$primary: $sky-blue !default;
+$primary-light: $sky-blue-light !default;
+$primary-dark: $sky-blue-dark !default;
+
+$secondary: $fuschia-pink !default;
+$secondary-light: $fuschia-pink-light !default;
+$secondary-dark: $fuschia-pink-dark !default;
+
+$color-list: (
+    primary: $primary,
+    primary-light: $primary-light,
+    primary-dark: $primary-dark,
+    secondary: $secondary,
+    secondary-light: $secondary-light,
+    secondary-dark: $secondary-dark,
+    neutral-100: $neutral-100,
+    neutral-200: $neutral-200,
+    neutral-300: $neutral-300,
+    neutral-400: $neutral-400,
+    neutral-500: $neutral-500,
+    neutral-600: $neutral-600,
+    info: $info,
+    error: $error,
+    warning: $warning,
+    success: $success,
+);

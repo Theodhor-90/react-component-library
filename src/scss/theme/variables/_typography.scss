@@ -1,0 +1,334 @@
+$primary-font-family: 'DM Sans', sans-serif !default;
+$header-font-family: $primary-font-family !default;
+
+$h1-fonts: (
+    sm: (
+        font-size: 32px,
+        line-height: 40px,
+        letter-spacing: -0.01em,
+    ),
+    md: (
+        font-size: 32px,
+        line-height: 40px,
+        letter-spacing: -0.01em,
+    ),
+    lg: (
+        font-size: 34px,
+        line-height: 40px,
+        letter-spacing: -0.01em,
+    ),
+    xl: (
+        font-size: 56px,
+        line-height: 64px,
+        letter-spacing: -0.02em,
+    ),
+    xxl: (
+        font-size: 56px,
+        line-height: 64px,
+        letter-spacing: -0.02em,
+    ),
+) !default;
+
+$h2-fonts: (
+    sm: (
+        font-size: 30px,
+        line-height: 38px,
+        letter-spacing: -0.01em,
+    ),
+    md: (
+        font-size: 30px,
+        line-height: 38px,
+        letter-spacing: -0.01em,
+    ),
+    lg: (
+        font-size: 36px,
+        line-height: 42px,
+        letter-spacing: -0.01em,
+    ),
+    xl: (
+        font-size: 42px,
+        line-height: 48px,
+        letter-spacing: -0.01em,
+    ),
+    xxl: (
+        font-size: 48px,
+        line-height: 56px,
+        letter-spacing: -0.02em,
+    ),
+) !default;
+
+$h3-fonts: (
+    sm: (
+        font-size: 28px,
+        line-height: 38px,
+        letter-spacing: -0.01em,
+    ),
+    md: (
+        font-size: 28px,
+        line-height: 38px,
+        letter-spacing: -0.02em,
+    ),
+    lg: (
+        font-size: 32px,
+        line-height: 40px,
+        letter-spacing: -0.01em,
+    ),
+    xl: (
+        font-size: 36px,
+        line-height: 42px,
+        letter-spacing: -0.01em,
+    ),
+    xxl: (
+        font-size: 42px,
+        line-height: 48px,
+        letter-spacing: -0.01em,
+    ),
+) !default;
+
+$h4-fonts: (
+    sm: (
+        font-size: 24px,
+        line-height: 32px,
+        letter-spacing: -0.01em,
+    ),
+    md: (
+        font-size: 24px,
+        line-height: 32px,
+        letter-spacing: -0.01em,
+    ),
+    lg: (
+        font-size: 32px,
+        line-height: 40px,
+        letter-spacing: -0.01em,
+    ),
+    xl: (
+        font-size: 32px,
+        line-height: 40px,
+        letter-spacing: -0.01em,
+    ),
+    xxl: (
+        font-size: 36px,
+        line-height: 42px,
+        letter-spacing: -0.01em,
+    ),
+) !default;
+
+$h5-fonts: (
+    sm: (
+        font-size: 20px,
+        line-height: 26px,
+        letter-spacing: -0.01em,
+    ),
+    md: (
+        font-size: 20px,
+        line-height: 26px,
+        letter-spacing: -0.01em,
+    ),
+    lg: (
+        font-size: 24px,
+        line-height: 32px,
+        letter-spacing: -0.01em,
+    ),
+    xl: (
+        font-size: 28px,
+        line-height: 38px,
+        letter-spacing: -0.015em,
+    ),
+    xxl: (
+        font-size: 32px,
+        line-height: 48px,
+        letter-spacing: -0.01em,
+    ),
+) !default;
+
+$h6-fonts: (
+    sm: (
+        font-size: 18px,
+        line-height: 24px,
+        letter-spacing: -0.01em,
+    ),
+    md: (
+        font-size: 18px,
+        line-height: 24px,
+        letter-spacing: -0.01em,
+    ),
+    lg: (
+        font-size: 20px,
+        line-height: 32px,
+        letter-spacing: -0.01em,
+    ),
+    xl: (
+        font-size: 20px,
+        line-height: 32px,
+        letter-spacing: -0.01em,
+    ),
+    xxl: (
+        font-size: 24px,
+        line-height: 32px,
+        letter-spacing: -0.01em,
+    ),
+) !default;
+
+$body-fonts: (
+    sm: (
+        font-size: 16px,
+        line-height: 24px,
+        letter-spacing: -0.01em,
+    ),
+    md: (
+        font-size: 16px,
+        line-height: 24px,
+        letter-spacing: -0.01em,
+    ),
+    lg: (
+        font-size: 16px,
+        line-height: 24px,
+        letter-spacing: -0.01em,
+    ),
+    xl: (
+        font-size: 16px,
+        line-height: 24px,
+        letter-spacing: -0.01em,
+    ),
+    xxl: (
+        font-size: 18px,
+        line-height: 24px,
+        letter-spacing: -0.01em,
+    ),
+) !default;
+
+$body-small-fonts: (
+    sm: (
+        font-size: 14px,
+        line-height: 22px,
+        letter-spacing: -0.01em,
+    ),
+    md: (
+        font-size: 14px,
+        line-height: 22px,
+        letter-spacing: -0.01em,
+    ),
+    lg: (
+        font-size: 14px,
+        line-height: 22px,
+        letter-spacing: -0.01em,
+    ),
+    xl: (
+        font-size: 14px,
+        line-height: 22px,
+        letter-spacing: -0.01em,
+    ),
+    xxl: (
+        font-size: 16px,
+        line-height: 24px,
+        letter-spacing: -0.01em,
+    ),
+) !default;
+
+$button-fonts: (
+    sm: (
+        font-size: 16px,
+        line-height: 24px,
+        letter-spacing: -0.01em,
+    ),
+    md: (
+        font-size: 16px,
+        line-height: 24px,
+        letter-spacing: -0.01em,
+    ),
+    lg: (
+        font-size: 16px,
+        line-height: 24px,
+        letter-spacing: -0.01em,
+    ),
+    xl: (
+        font-size: 16px,
+        line-height: 24px,
+        letter-spacing: -0.01em,
+    ),
+    xxl: (
+        font-size: 18px,
+        line-height: 24px,
+        letter-spacing: -0.01em,
+    ),
+) !default;
+
+$eyebrow-fonts: (
+    sm: (
+        font-size: 18px,
+        line-height: 24px,
+        letter-spacing: -0.01em,
+    ),
+    md: (
+        font-size: 18px,
+        line-height: 24px,
+        letter-spacing: -0.01em,
+    ),
+    lg: (
+        font-size: 18px,
+        line-height: 24px,
+        letter-spacing: -0.01em,
+    ),
+    xl: (
+        font-size: 20px,
+        line-height: 32px,
+        letter-spacing: -0.01em,
+    ),
+    xxl: (
+        font-size: 24px,
+        line-height: 32px,
+        letter-spacing: -0.01em,
+    ),
+) !default;
+
+$stats-fonts: (
+    sm: (
+        font-size: 64px,
+        line-height: 64px,
+        letter-spacing: -0.01em,
+    ),
+    md: (
+        font-size: 72px,
+        line-height: 72px,
+        letter-spacing: -0.01em,
+    ),
+    lg: (
+        font-size: 80px,
+        line-height: 80px,
+        letter-spacing: -0.01em,
+    ),
+    xl: (
+        font-size: 96px,
+        line-height: 96px,
+        letter-spacing: -0.01em,
+    ),
+    xxl: (
+        font-size: 104px,
+        line-height: 104px,
+        letter-spacing: -0.01em,
+    ),
+) !default;
+
+$header-fonts: (
+    h1: $h1-fonts,
+    h2: $h2-fonts,
+    h3: $h3-fonts,
+    h4: $h4-fonts,
+    h5: $h5-fonts,
+    h6: $h6-fonts,
+);
+
+$regular-fonts: (
+    body: $body-fonts,
+    body-small: $body-small-fonts,
+    button: $button-fonts,
+    eyebrow: $eyebrow-fonts,
+    stats: $stats-fonts,
+);
+
+$font-controllers: (
+    md: true,
+    lg: true,
+    xl: true,
+    xxl: true,
+) !default;
