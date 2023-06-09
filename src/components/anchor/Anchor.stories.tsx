@@ -1,6 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import Anchor from './Anchor'
-import placeholder from '../../assets/placeholderImage.png'
 import { icons } from '../../icons/IconIndex'
 
 const iconKeys = Object.keys(icons)

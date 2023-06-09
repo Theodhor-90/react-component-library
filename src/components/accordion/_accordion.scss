@@ -1,0 +1,119 @@
+.accordion-button {
+    position: relative;
+    width: 100%;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+}
+
+.accordion-container {
+    & .h6 {
+        font-weight: 700;
+        margin-top: 0;
+        margin-bottom: 0;
+        margin-right: get-spacer(4);
+    }
+    &.inverted {
+        & .accordion-element {
+            color: $accordion-color-inverted;
+
+            & .accordion-button {
+                & svg {
+                    stroke: $accordion-color-inverted;
+                }
+                &:hover,
+                &:focus {
+                    color: $accordion-color-hover-inverted;
+                    & svg {
+                        stroke: $accordion-color-hover-inverted;
+                    }
+                }
+                &:focus {
+                    outline: $inverted-outline;
+                }
+            }
+        }
+    }
+    & .accordion-element {
+        border-bottom: $accordion-border;
+        padding: get-spacer(3) get-spacer(4);
+        &:first-child {
+            border-top: $accordion-border;
+        }
+        color: $accordion-color;
+        & .accordion-button {
+            &:hover,
+            &:focus {
+                border: none;
+                color: $accordion-color-hover;
+                & svg {
+                    stroke: $accordion-color-hover;
+                }
+            }
+            &:focus {
+                outline: $base-outline;
+            }
+            &:active {
+                outline: none;
+            }
+        }
+
+        & .accordion-panel {
+            max-height: 0;
+            transition: all 0.4s ease-in-out;
+            overflow: hidden;
+            & p {
+                margin-bottom: 0;
+            }
+        }
+
+        &.active {
+            & .accordion-panel {
+                margin-top: map-get($spacers, 4);
+                & p {
+                    margin-bottom: map-get($spacers, 4);
+                }
+            }
+            & .open-closed {
+                & .plus {
+                    opacity: 0;
+                    transform: rotate(-180deg);
+                }
+                & .minus {
+                    opacity: 1;
+                    transform: rotate(0);
+                }
+            }
+        }
+        & .open-closed {
+            height: 24px;
+            width: 24px;
+            border-radius: 50%;
+            .plus {
+                transition: all 0.4s ease-in-out;
+                transform: rotate(0);
+            }
+            .minus {
+                transform: rotate(180deg);
+                transition: all 0.4s ease-in-out;
+                opacity: 1;
+            }
+        }
+
+        & .circle-animation {
+            position: relative;
+            flex: 0 0 24px;
+        }
+
+        & .accordion-icon {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            & svg {
+                width: 100%;
+                height: 100%;
+                stroke: $accordion-color;
+            }
+        }
+    }
+}

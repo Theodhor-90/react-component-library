@@ -44,7 +44,13 @@ $utilities: map-get-multiple(
     )
 );
 
+@import './bootstrap/utilities/api';
+@import './theme/functions';
+@import './theme/mixins';
+@import './theme/global';
+
 @import '../components/button/button';
 @import '../components/icon/icon';
 @import '../components/avatar/avatar';
 @import '../components/anchor/anchor';
+@import '../components/accordion/accordion';
