@@ -1,0 +1,148 @@
+.input-wrapper {
+    &.checkbox-container {
+        display: flex;
+        position: relative;
+        [type='checkbox'],
+        [type='radio'] {
+            opacity: 0;
+            height: $checkbox-size;
+            width: $checkbox-size;
+            z-index: 100;
+            cursor: pointer;
+            &:disabled {
+                pointer-events: none;
+            }
+            & + label {
+                padding-left: $checkbox-label-spacing;
+                cursor: pointer;
+                display: flex;
+                align-items: center;
+                line-height: $checkbox-line-height;
+                &::before {
+                    content: '';
+                    position: absolute;
+                    height: $checkbox-size;
+                    width: $checkbox-size;
+                    left: 0;
+                    top: 0;
+                    border-radius: $checkbox-br;
+                    background-color: $checkbox-bg;
+                    border: $checkbox-border;
+                }
+                &::after {
+                    content: '';
+                    position: absolute;
+                    height: $checkbox-size;
+                    width: $checkbox-size;
+                    left: 0;
+                    top: 0;
+                }
+            }
+            &:checked + label,
+            &:indeterminate + label {
+                &::before {
+                    border: $checkbox-border-checked;
+                    background-color: $checkbox-bg-checked;
+                }
+            }
+            &:hover + label {
+                &::before {
+                    border: $checkbox-border-hover;
+                    background-color: $checkbox-bg-hover;
+                }
+            }
+            &:active + label {
+                &::before {
+                    border: $checkbox-border-active;
+                    background-color: $checkbox-bg-active;
+                }
+            }
+            &:focus + label {
+                &::before {
+                    outline: $base-outline;
+                    outline-offset: $base-outline-offset;
+                }
+            }
+            &:disabled + label {
+                color: $checkbox-color-disabled;
+                cursor: auto;
+                &::before {
+                    border: $checkbox-border-disabled;
+                    background-color: $checkbox-bg-disabled;
+                }
+            }
+            &:checked:hover + label,
+            &:indeterminate:hover:not(:disabled) + label {
+                &::before {
+                    border: $checkbox-border-hover;
+                    background-color: $checkbox-bg-hover;
+                }
+            }
+            &:checked:active + label,
+            &:indeterminate:active:not(:disabled) + label {
+                &::before {
+                    border: $checkbox-border-active;
+                    background-color: $checkbox-bg-active;
+                }
+            }
+        }
+
+        [type='checkbox'] {
+            &:checked + label {
+                &::after {
+                    background-image: url($checkbox-checked);
+                    background-repeat: no-repeat;
+                    background-position: top;
+                }
+            }
+            &:checked:disabled + label {
+                &::after {
+                    background-image: url($checkbox-checked-disabled);
+                }
+            }
+            &:indeterminate + label {
+                &::after {
+                    left: 1px;
+                    top: 1px;
+                    background-image: url($checkbox-indeterminate);
+                    background-repeat: no-repeat;
+                    background-position: center;
+                }
+            }
+            &:indeterminate:disabled + label {
+                &::after {
+                    background-image: url($checkbox-indeterminate-disabled);
+                }
+            }
+        }
+
+        [type='radio'] + label {
+            &::before {
+                border-radius: 50%;
+            }
+        }
+        [type='radio']:indeterminate + label {
+            &::before {
+                background-color: $checkbox-bg;
+                border: $checkbox-border;
+            }
+        }
+
+        [type='radio'] {
+            &:checked + label {
+                &::after {
+                    background-image: url($radio-checked);
+                    left: 1px;
+                    top: 1px;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                }
+            }
+            &:checked:disabled + label {
+                &::after {
+                    background-image: url($radio-checked-disabled);
+                }
+            }
+        }
+    }
+}

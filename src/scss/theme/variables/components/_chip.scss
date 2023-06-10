@@ -1,0 +1,31 @@
+$chip-padding: map-get($spacers, 1) map-get($spacers, 3);
+// default
+$chip-color: $black !default;
+$chip-color-inverted: $neutral-100;
+$chip-bg: transparent !default;
+$chip-bg-inverted: transparent !default;
+$chip-border: $border-width $border-style $primary !default;
+$chip-border-inverted: $border-width $border-style $neutral-100 !default;
+// hover
+$chip-hover-color: $black !default;
+$chip-hover-color-inverted: $white !default;
+$chip-hover-bg: $primary-light !default;
+$chip-hover-bg-inverted: $neutral-400 !default;
+$chip-border-hover: $border-width $border-style $primary !default;
+$chip-border-hover-inverted: $border-width $border-style $neutral-100 !default;
+// active
+$chip-active-color: $white !default;
+$chip-active-color-inverted: $white !default;
+$chip-active-bg: $primary-dark !default;
+$chip-active-bg-inverted: $primary !default;
+$chip-border-active: $border-width $border-style $primary-dark !default;
+$chip-border-active-inverted: $border-width $border-style $primary !default;
+// disabled
+$chip-disabled-color: $neutral-300 !default;
+$chip-disabled-color-inverted: $white !default;
+$chip-disabled-bg: $neutral-100 !default;
+$chip-disabled-bg-inverted: $neutral-400 !default;
+$chip-border-disabled: $border-width $border-style $neutral-100 !default;
+$chip-border-disabled-inverted: $border-width $border-style $neutral-400 !default;
+// border radius
+$chip-border-radius: map-get($spacers, 1);

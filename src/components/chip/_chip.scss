@@ -1,0 +1,50 @@
+.chip {
+    padding: $chip-padding;
+    width: max-content;
+    cursor: pointer;
+    color: $chip-color;
+    border: $chip-border;
+    border-radius: $chip-border-radius;
+    &:hover {
+        color: $chip-hover-color;
+        border: $chip-border-hover;
+        background-color: $chip-hover-bg;
+    }
+    &:focus {
+        outline: $base-outline;
+    }
+    &:active {
+        color: $chip-active-color;
+        border: $chip-border-active;
+        background-color: $chip-active-bg;
+    }
+    &:disabled {
+        color: $chip-disabled-color;
+        border: $chip-border-disabled;
+        background-color: $chip-disabled-bg;
+        pointer-events: none;
+    }
+    &.inverted {
+        color: $chip-color-inverted;
+        border: $chip-border-inverted;
+        &:hover {
+            color: $chip-hover-color-inverted;
+            border: $chip-border-hover-inverted;
+            background-color: $chip-hover-bg-inverted;
+        }
+        &:focus {
+            outline: $inverted-outline;
+        }
+        &:active {
+            color: $chip-active-color-inverted;
+            border: $chip-border-active-inverted;
+            background-color: $chip-active-bg-inverted;
+        }
+        &:disabled {
+            color: $chip-disabled-color-inverted;
+            border: $chip-border-disabled-inverted;
+            background-color: $chip-disabled-bg-inverted;
+            pointer-events: none;
+        }
+    }
+}

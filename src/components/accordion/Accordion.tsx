@@ -1,4 +1,4 @@
-import React, { FC, LegacyRef, createRef, useEffect, useRef, useState } from 'react'
+import React, { FC, createRef, useEffect, useState } from 'react'
 import IconComponent from '../icon/IconComponent'
 
 export type TAccordionElement = {

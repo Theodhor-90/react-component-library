@@ -1,0 +1,20 @@
+$checkbox-br: 6px !default;
+$checkbox-label-spacing: 18px !default;
+$checkbox-size: 24px !default;
+$checkbox-line-height: 26px !default;
+// default
+$checkbox-border: $border-width $border-style $neutral-500 !default;
+$checkbox-bg: $white !default;
+// hover
+$checkbox-border-hover: $border-width $border-style $primary-light !default;
+$checkbox-bg-hover: $neutral-100 !default;
+// active
+$checkbox-border-active: $border-width $border-style $primary-dark !default;
+$checkbox-bg-active: $neutral-100 !default;
+// checked
+$checkbox-border-checked: $border-width $border-style $primary !default;
+$checkbox-bg-checked: $neutral-100 !default;
+// disabled
+$checkbox-color-disabled: $neutral-400 !default;
+$checkbox-border-disabled: $border-width $border-style $neutral-400 !default;
+$checkbox-bg-disabled: $neutral-200 !default;
