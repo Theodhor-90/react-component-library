@@ -1,0 +1,95 @@
+.control {
+    height: map-get($control-sizes, xxl);
+    width: map-get($control-sizes, xxl);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding: 0;
+    border-radius: $control-border-radius;
+    color: $control-button-color;
+    background-color: $control-button-bg;
+    border: $control-border;
+    @include media-breakpoint-down(xxl) {
+        height: map-get($control-sizes, xl);
+        width: map-get($control-sizes, xl);
+    }
+    @include media-breakpoint-down(xl) {
+        height: map-get($control-sizes, lg);
+        width: map-get($control-sizes, lg);
+    }
+    @include media-breakpoint-down(lg) {
+        height: map-get($control-sizes, md);
+        width: map-get($control-sizes, md);
+    }
+    @include media-breakpoint-down(md) {
+        height: map-get($control-sizes, sm);
+        width: map-get($control-sizes, sm);
+    }
+    &.navigation {
+        height: map-get($control-sizes, xl);
+        width: map-get($control-sizes, xl);
+        @include media-breakpoint-down(xxl) {
+            height: map-get($control-sizes, lg);
+            width: map-get($control-sizes, lg);
+        }
+        @include media-breakpoint-down(xl) {
+            height: map-get($control-sizes, md);
+            width: map-get($control-sizes, md);
+        }
+        @include media-breakpoint-down(lg) {
+            height: map-get($control-sizes, sm);
+            width: map-get($control-sizes, sm);
+        }
+        & .control-icon-container {
+            & .icon-container {
+                & svg {
+                    height: 100%;
+                    stroke: currentColor;
+                    fill: none;
+                }
+            }
+        }
+    }
+    & .control-icon-container {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        width: 50%;
+        height: 50%;
+        & .icon-container {
+            & svg {
+                height: 50%;
+                stroke: none;
+                fill: currentColor;
+            }
+        }
+        &.play {
+            & svg {
+                height: 67%;
+                width: 75%;
+            }
+        }
+    }
+    &:hover {
+        color: $control-button-hover-color;
+        background-color: $control-button-hover-bg;
+        border: $control-border-hover;
+    }
+    &:focus {
+        outline: $base-outline;
+        outline-offset: $base-outline-offset;
+    }
+    &:active {
+        color: $control-button-active-color;
+        background-color: $control-button-active-bg;
+        border: $control-border-active;
+        outline: none;
+    }
+    &:disabled {
+        color: $control-button-disabled-color;
+        background-color: $control-button-disabled-bg;
+        border: $control-border-disabled;
+        pointer-events: none;
+    }
+}

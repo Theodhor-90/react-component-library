@@ -1,0 +1,18 @@
+.divider {
+    &-horizontal {
+        &.visible-line {
+            & .line {
+                border-top: $border-width $border-style $border-color;
+            }
+        }
+    }
+    &-vertical {
+        height: 100%;
+        &.visible-line {
+            & .line {
+                border-left: $border-width $border-style $border-color;
+                height: 100%;
+            }
+        }
+    }
+}

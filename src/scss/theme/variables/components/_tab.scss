@@ -1,0 +1,43 @@
+$tab-media-size: 40px !default;
+$tab-padding: map-get($spacers, 4) !default;
+$tab-padding-vertical: map-get($spacers, 4) 0 !default;
+$tab-border: map-get($border-widths, 2) $border-style $neutral-400 !default;
+$tab-border-inverted: map-get($border-widths, 2) $border-style $neutral-400 !default;
+$tab-border-active: map-get($border-widths, $key: 2) $border-style $primary !default;
+$tab-border-active-inverted: map-get($border-widths, $key: 4) $border-style $primary !default;
+$tab-border-selected: map-get($border-widths, $key: 4) $border-style $primary !default;
+$tab-border-selected-inverted: map-get($border-widths, $key: 4) $border-style $primary !default;
+$tab-border-vertical: $border-width $border-style $black !default;
+$tab-border-vertical-inverted: $border-width $border-style $white !default;
+// default
+$tab-color: $black !default;
+$tab-color-inverted: $white !default;
+$tab-bg: transparent !default;
+$tab-bg-inverted: transparent !default;
+// hover
+$tab-color-hover: $black !default;
+$tab-color-hover-inverted: $white !default;
+$tab-bg-hover: $neutral-100 !default;
+$tab-bg-hover-inverted: $neutral-600 !default;
+// active
+$tab-color-active: $black !default;
+$tab-color-active-inverted: $white !default;
+$tab-bg-active: $neutral-200 !default;
+$tab-bg-active-inverted: $neutral-600 !default;
+// selected
+$tab-color-selected: $black !default;
+$tab-header-color-selected: $primary !default;
+$tab-color-selected-inverted: $white !default;
+$tab-bg-selected: transparent !default;
+$tab-bg-selected-inverted: transparent !default;
+
+// horizontal tabs focus
+$tab-outline-offset: 16px;
+$tab-outline-offset-mobile: 4px;
+
+// horizontal tabs focus
+$tab-outline-offset: 16px;
+$tab-outline-offset-mobile: 4px;
+
+// vertical
+$tab-vertical-bg: transparent !default;
